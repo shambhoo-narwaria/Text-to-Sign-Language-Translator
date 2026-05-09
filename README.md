@@ -2,6 +2,8 @@
 
 A web application that empowers communication by seamlessly translating spoken language into American Sign Language animations in real-time.
 
+![Project Demo](static/video/demo.gif)
+
 
 ## Project Overview
 
@@ -28,8 +30,8 @@ This project addresses the communication barrier faced by individuals who rely o
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [Your Repository URL Here]
-    cd Real-Time-Speech-to-ISL-Translator
+    git clone https://github.com/mr-narwaria/Text-to-Sign-Language-Translator.git
+    cd Text-to-Sign-Language-Translator
     ```
     (Replace `[Your Repository URL Here]` with your actual repository URL.)
 
@@ -52,6 +54,7 @@ This project addresses the communication barrier faced by individuals who rely o
     ```bash
     pip install -r requirements.txt
     ```
+    *(Note: This project is compatible with Python 3.10 up to Python 3.14.0+)*
 
 5.  **Run Database Migrations:**
     ```bash
@@ -63,6 +66,7 @@ This project addresses the communication barrier faced by individuals who rely o
     ```bash
     python manage.py runserver 8000
     ```
+    *(Note: On the first run, the application will automatically download required NLTK data packages like `wordnet`, `punkt_tab`, and `averaged_perceptron_tagger_eng`. This may take a few moments.)*
 
 7.  **Access the Application:**
     Open your web browser and navigate to `http://127.0.0.1:8000/`.
@@ -95,3 +99,6 @@ We welcome contributions from the community! To contribute:
 * Support for multiple languages.
 * Mobile application development for offline access.
 * Personalized user profiles with customizable settings.
+
+## Note on GitHub Language Stats
+If you notice the repository shows HTML as the dominant language, it is because the template files are slightly larger than the Python logic. We have included a `.gitattributes` file to correct this by marking templates as vendored code, ensuring Python is correctly identified as the primary technology.

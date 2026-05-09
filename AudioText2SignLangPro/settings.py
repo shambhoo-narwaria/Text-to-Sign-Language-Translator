@@ -20,8 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 NLTK_DATA_DIR = BASE_DIR / 'nltk_data'
 nltk.data.path.append(NLTK_DATA_DIR)
 nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger_eng')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
+nltk.download('punkt_tab')
+nltk.download('punkt')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -32,9 +35,9 @@ SECRET_KEY = 'django-insecure-v%=r^@tp=$7!v5y!ci50j1-#wpj@u-fs=a&$n*t22r58^na-zx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ab77-2409-4085-9c90-b658-935-2fa3-3ada-8990.ngrok-free.app']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ab77-2409-4085-9c90-b658-935-2fa3-3ada-8990.ngrok-free.app']
 
-CSRF_TRUSTED_ORIGINS = ['https://ab77-2409-4085-9c90-b658-935-2fa3-3ada-8990.ngrok-free.app']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000', 'http://localhost:8000', 'https://ab77-2409-4085-9c90-b658-935-2fa3-3ada-8990.ngrok-free.app']
 
 
 # Application definition

@@ -1,0 +1,2 @@
+# Mark HTML templates as vendored so they don't dominate the language statistics
+templates/*.html linguist-vendored
